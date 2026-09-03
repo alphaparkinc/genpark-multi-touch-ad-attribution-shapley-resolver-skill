@@ -1,0 +1,42 @@
+{
+  "name": "genpark-multi-touch-ad-attribution-shapley-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Algorithmic multi-touch advertising attribution resolver utilizing cooperative game theory Shapley values to optimize ROAS.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "merchant-commerce",
+  "tags": [
+    "triple-whale",
+    "northbeam",
+    "ad-attribution",
+    "shapley-value",
+    "roas-optimizer"
+  ],
+  "inputs": {
+    "conversion_order_id": {
+      "type": "string"
+    },
+    "touchpoint_journey": {
+      "type": "array"
+    },
+    "order_revenue_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "attribution_model_id": {
+      "type": "string"
+    },
+    "attribution_model": {
+      "type": "string"
+    },
+    "touchpoint_contributions": {
+      "type": "array"
+    },
+    "attribution_graph_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
